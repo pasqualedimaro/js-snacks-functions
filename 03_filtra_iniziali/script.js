@@ -5,6 +5,17 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 
 // Dichiara la funzione qui.
 
+//funzione tradizionale 
+function filtraPerLettera(nomi, lettera) {
+    const risultato = [];
+    for (let i = 0; i < nomi.length; i++) {
+        if (nomi[i][0].toLowerCase() === lettera.toLowerCase()) {
+            risultato.push(nomi[i]);
+        }
+    }
+    return risultato;
+}
+
 
 // Invoca la funzione qui e stampa il risultato in console
 
