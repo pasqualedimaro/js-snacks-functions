@@ -17,7 +17,18 @@ function contaVocali(word) {
     }
     return conto;
 }
-
+// funzione arrow
+const contaVocaliArrow = (word) => {
+    const vocali = 'aeiou';
+    let conto = 0;
+    
+    for (let i = 0; i < word.length; i++) {
+        if (vocali.includes(word[i].toLowerCase())) {
+            conto++;
+        }
+    }
+    return conto;
+}
 
 // Invoca la funzione qui e stampa il risultato in console
 
