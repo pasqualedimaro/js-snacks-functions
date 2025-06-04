@@ -27,6 +27,10 @@ const ottieniInizialiArrow = (nomi) => {
 
 // Invoca la funzione qui e stampa il risultato in console
 
+// stamp tradizionale
+console.log("Funzione tradizionale:", ottieniIniziali(names));
 
+// stamp arrow
+console.log("Arrow function:", ottieniInizialiArrow(names));
 
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]
