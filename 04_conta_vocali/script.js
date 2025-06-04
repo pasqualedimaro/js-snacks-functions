@@ -11,7 +11,7 @@ function contaVocali(word) {
     let conto = 0;
     
     for (let i = 0; i < word.length; i++) {
-        if (vocali.includes(stringa[i])) {
+        if (vocali.includes(word[i])) {
             conto++;
         }
     }
@@ -32,6 +32,11 @@ const contaVocaliArrow = (word) => {
 
 // Invoca la funzione qui e stampa il risultato in console
 
+// funzione tradizionale
+console.log("Funzione tradizionale", contaVocali(word));
+
+//funzione arrow
+console.log("Arrow function", contaVocaliArrow(word));
 
 
 //Risultato atteso se si passa 'javascript': 3 (a, a, i)
