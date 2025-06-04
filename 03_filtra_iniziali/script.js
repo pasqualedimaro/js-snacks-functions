@@ -31,7 +31,11 @@ const letteraDaCercare = "A";
 
 // Invoca la funzione qui e stampa il risultato in console
 
+// funzione tradizionale
+console.log("Funzione tradizionale", filtraPerLettera(names, letteraDaCercare));
 
+//funzione arrow
+console.log("Arrow function:", filtraPerLetteraArrow(names, letteraDaCercare));
 
 
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]
