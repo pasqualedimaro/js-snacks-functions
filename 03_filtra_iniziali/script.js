@@ -16,8 +16,21 @@ function filtraPerLettera(nomi, lettera) {
     return risultato;
 }
 
+// funzione con arrow 
+const filtraPerLetteraArrow = (nomi, lettera) => {
+    const risultato = [];
+    for (let i = 0; i < nomi.length; i++) {
+        if (nomi[i][0].toLowerCase() === lettera.toLowerCase()) {
+            risultato.push(nomi[i]);
+        }
+    }
+    return risultato;
+}
+
+const letteraDaCercare = "A";
 
 // Invoca la funzione qui e stampa il risultato in console
+
 
 
 
